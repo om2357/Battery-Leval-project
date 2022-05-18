@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main   );
 
-        txtBatteryLevel = findViewById(R.id.BatteryLevel);
+        txtBatteryLevel = findViewById(R.id.BatteryLevel) ;
 
         this.registerReceiver(this.myBatteryReceiver, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
     }
